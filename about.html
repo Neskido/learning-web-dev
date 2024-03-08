@@ -4,11 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./" />
+    <!--Internal or Embedded CSS-->
+    <style>
+      /*Comment in CSS*/
+      h2 {
+        color: aqua;
+      } /*Selection by tag name*/
+      .mvg {
+        color: blueviolet;
+      } /*Selection by class name*/
+      h2 {
+        color: aquamarine;
+      }
+      /*The second h2 changed the first h2 but not the mvg class because the mvg class has a higher specificity*/
+    </style>
   </head>
-
   <body>
-    <h2>About Us</h2>
-    <img src="./assest/neski.jpg" alt="" width="200px" />
+    <header>
+      <nav>
+        <a href="./index.html"><p>Home</p></a>
+        <a href="#"><p>about</p></a>
+        <a href="./form.html"><p>contact us</p></a>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h2>About Us</h2>
+        <nav>
+          <a href="#reach-out"><p>Reach Out</p></a>
+          <a href="mission"><p>Mission</p></a>
+          <a href="vision"><p>Vision</p></a>
+          <a href="goals"><p>Goal</p></a>
+        </nav>
+        <img src="./assest/neski.jpg" alt="" width="200px" />
+      </div>
+    </main>
 
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est tempora
@@ -28,6 +59,72 @@
       voluptas placeat ratione debitis perferendis ad? Culpa odit eligendi
       quisquam! Est nihil neque placeat nostrum!
     </p>
-    <p>this is <ins>insered</ins> htd </p>
+    <p>x<sup>2</sup>3>/</p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+      consequuntur recusandae laborum tempora qui. Necessitatibus aut rerum
+      corrupti vitae quis placeat id? Quod voluptatibus est sapiente at maxime
+      dignissimos aut!
+      <a href="http://facebook.com" target="_blank">learn more</a>
+    </p>
+
+    <section id- reachout>
+      <h2>Reach out to us</h2>
+      <div>
+        <a href="tel:+2347083041500"
+          ><img src="./assest/phone-call.png" width="50px" alt=""
+        /></a>
+        <a href="mmanuelchidera@gmail.com"
+          ><img src="./assest/mail.png" width="50px" alt=""
+        /></a>
+      </div>
+      <section>
+        <section id="mission-container">
+          <article id="mission">
+            <h2 class="mvg">Mission</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur natus magnam nam, illum ipsam laudantium temporibus neque doloremque est eos ratione dolore sequi error ullam? Modi odio minus cupiditate inventore!
+            Amet consequuntur ipsam nostrum beatae deleniti, tenetur molestias facere. Dolor, dolore mollitia quae, esse dolores perspiciatis tempore pariatur cumque iusto natus, nesciunt placeat! Praesentium necessitatibus qui tempora in corporis recusandae.
+            Sint reiciendis odit aliquid cupiditate consequatur sed cumque expedita excepturi possimus modi, rerum unde tempora ipsam nemo dicta corrupti porro! Praesentium, suscipit fugit. Eaque earum eos vitae voluptates iste sequi?
+            Dolores nisi consequuntur aut corporis possimus, nostrum autem, id itaque asperiores odio praesentium amet officiis eligendi sunt ratione sed? Excepturi quasi itaque voluptas beatae? Molestias beatae consequuntur quam voluptatem similique.
+            Temporibus earum reiciendis est consectetur nisi labore nemo ipsa sapiente ex corporis assumenda voluptatem nihil maxime culpa maiores eos, quod laudantium cupiditate impedit illum necessitatibus cumque eum alias. Magni, maiores?</p>
+          </article>
+          <article id="vision" style="background-color: coral;"> <!--Inline CSS can override the id, making it the one with higher specificity--> 
+            <h2 class="mvg">vision</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ex laudantium vel sapiente repudiandae expedita, odio rerum, quaerat iure saepe aliquid veritatis iusto dicta accusamus. Magnam numquam aliquam cum incidunt.
+          Possimus consequatur blanditiis vel pariatur, sit soluta ipsam corporis nulla doloremque neque accusamus debitis quos, reprehenderit architecto. Reprehenderit quibusdam debitis aliquam nihil aut natus aliquid harum provident, pariatur quisquam quae.
+          Quas doloremque fuga facilis eligendi molestias, laborum nemo ducimus. Animi ipsa alias incidunt cupiditate nostrum quidem impedit? Eos nesciunt inventore eaque nemo similique, ratione debitis itaque commodi quas, placeat doloremque?
+          Consequatur nam nesciunt aliquid totam velit unde earum quisquam? Dicta earum ullam consequuntur corporis quidem libero numquam esse rem rerum. Perferendis omnis necessitatibus, cum quidem vero repellendus non eum quaerat?
+          Consequatur, enim ab excepturi sequi pariatur ea. Eveniet culpa consequatur error cum asperiores repellat molestias facilis saepe unde reprehenderit. Quae molestiae accusantium ipsum itaque eum iure soluta quo ipsam ut!
+          Veniam consectetur incidunt quos iure nobis deserunt velit dolorum tempora asperiores facilis maiores, aliquam itaque voluptas sint. Distinctio dolore fugit suscipit quis iusto? Quisquam dolore exercitationem recusandae facere aperiam doloribus?
+          Velit, necessitatibus. Vero commodi neque eaque! Incidunt animi voluptatem odio, labore error illo commodi voluptas qui obcaecati inventore laboriosam repellendus. Reprehenderit animi, veritatis illum voluptatibus veniam eos laboriosam numquam porro!
+          Similique inventore expedita, quas cumque vero amet laborum ad eveniet, quidem alias autem quis corporis accusantium est minima saepe quaerat. Quisquam, explicabo voluptatum! Modi sit eveniet dolorum magni placeat laudantium.
+          Iusto, quo quos! Dolores delectus veritatis, ab culpa cum, tempore amet, et consectetur ullam dolorum asperiores repudiandae laboriosam eos quisquam eveniet accusamus ipsa est facilis ea quod expedita? A, nam!
+          Aspernatur molestias laudantium, praesentium ad iure corporis voluptates eius dolor rerum possimus optio ut veritatis illo temporibus consequuntur quibusdam error sit. Non inventore totam velit minus sit hic eligendi maxime?</p>
+          </article>
+          <article>
+            <article id="goals">
+              <h2 class="mvg">Goals</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi atque laudantium accusamus molestias nihil aliquam voluptatibus quae saepe dolorem laborum, cupiditate possimus aspernatur optio, praesentium voluptate at consequatur illum!
+              Non quasi repellat officia nesciunt culpa. Quisquam, quo dolore iste mollitia quae ipsa esse eligendi harum eos assumenda temporibus ex id, blanditiis corrupti! Quos magnam voluptatem incidunt id placeat aspernatur?
+              Inventore porro, rem dolores sed earum iusto fuga ratione ipsum vitae eaque laudantium suscipit et labore amet at repellendus sequi debitis. Consequatur pariatur corporis quis amet incidunt fugiat, commodi qui.
+              Nisi, quaerat iure unde totam accusamus, laboriosam quia quos nemo facilis id suscipit quidem porro laborum saepe quis, exercitationem odio non temporibus placeat voluptatibus ipsa? Porro odio amet fugit officiis.
+              Tempore perferendis odio voluptatum facere nesciunt distinctio error, corporis alias accusantium reprehenderit quaerat cum harum quidem illum repellat deleniti laudantium architecto itaque eos minima officiis debitis explicabo atque et. Voluptates!
+              Beatae, mollitia officiis fuga suscipit error reiciendis corrupti ab corporis, sequi, aliquid illum sapiente et deserunt amet exercitationem! Ut quia vitae et magnam quam veritatis recusandae aliquam nobis, ipsam enim.
+              Natus perferendis reprehenderit sint sapiente illo. Optio cumque tempora sequi reprehenderit atque aut, quos explicabo repellat. Quia unde nisi rerum sit facilis repudiandae inventore, voluptatibus architecto praesentium officiis ratione perspiciatis?
+              Ducimus optio magnam sed perspiciatis quas officiis cupiditate doloremque, reiciendis eum praesentium ab reprehenderit et saepe, illum iure voluptate excepturi asperiores? Sapiente ipsum quis rerum dignissimos debitis perferendis inventore ad?
+              Facilis enim, nostrum dicta cumque dignissimos necessitatibus provident. Nulla eaque similique ad, sapiente sit quisquam earum ratione ipsam qui dicta possimus ducimus atque. Illum fugiat enim sequi eum, cupiditate sunt!
+              Porro error fugiat, molestiae expedita ea repellendus excepturi dignissimos, maiores impedit doloribus suscipit harum repudiandae quod sint doloremque non amet praesentium veritatis reprehenderit modi soluta atque eos, aperiam itaque. Non.
+              Quidem ab laudantium tempore sit aperiam officiis autem recusandae molestiae tempora temporibus est vel necessitatibus delectus nesciunt voluptates vitae magni consequuntur esse quas, harum maxime ipsum officia? Esse, minima magnam!
+              Molestiae explicabo dignissimos adipisci voluptatem numquam eos incidunt quasi sapiente. Dolorem cum, perferendis soluta quasi ea nisi iusto ipsa quia dignissimos dolores quos, pariatur necessitatibus numquam, tempore beatae incidunt recusandae.
+              Aliquid, perspiciatis pariatur obcaecati sapiente error omnis consectetur minima incidunt nam, placeat magni animi doloremque fugiat. Sit quo rerum possimus? Quae aliquam ab architecto obcaecati nesciunt eos, quibusdam ratione adipisci!
+              Doloremque aspernatur dolor, ea quaerat quia, nisi sint modi illo dignissimos eos veniam nesciunt praesentium inventore at impedit. Veniam placeat itaque similique fugiat nemo tempora voluptas voluptates. Iste, debitis magnam.
+              Iure, quae? Labore aliquam, deleniti mollitia modi cumque veritatis? Animi neque ducimus cupiditate natus porro repudiandae illum maxime, obcaecati dolorem officia veritatis quos maiores soluta, ea aspernatur itaque, velit vitae?
+              Expedita placeat eum, deleniti facilis ex perspiciatis! Quisquam, amet dolores consequuntur enim similique vel molestiae, inventore excepturi quibusdam atque ratione alias quod quam iusto! Accusantium praesentium numquam perspiciatis distinctio dolores.
+              Ipsam voluptas est veritatis exercitationem deleniti reiciendis in laborum sint perspiciatis quod aliquam ullam, eius minima ad? Nisi delectus doloremque deleniti, repellendus nobis tempora maiores nam nulla, possimus ipsum ab.
+              Suscipit voluptatem corporis iure? A velit cupiditate ullam, ut facilis animi suscipit fugiat magnam similique reiciendis quae quo corrupti asperiores qui tempore voluptas laborum, cumque voluptates. Necessitatibus itaque officiis dolor!
+              Iusto odit voluptate, doloribus commodi cum corrupti sint suscipit id repellat facilis debitis cumque deleniti aut, nobis accusamus modi consequatur excepturi possimus explicabo et, necessitatibus cupiditate. Corporis vitae autem rem.
+              Labore voluptates nam adipisci, corporis officiis voluptas rerum impedit facilis rem doloribus aperiam. Culpa animi, ducimus laudantium accusamus nemo eveniet molestias delectus, sed hic obcaecati dignissimos maiores, impedit quam esse!</p>
+          </article>
+      </section>
   </body>
 </html>

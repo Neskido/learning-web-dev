@@ -1,108 +1,220 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Emma</title>
-	</head>
-	
-	<body>
-		<!--hello world-->
-		<!--The following below are the Heading tags-->
-		<h1>This is heading 1</h1>
-                <h1>This is heading 2</h2>
-		<h3>This is heading 3</h3>
-		<h4>This is heading 4</h4>
-		<h5>This is heading 5</h5>
-		<h6>This is heading 6</h6>
+  <head>
+    <title>Emma</title>
+    <style> 
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ol li {
+        color: greenyellow;
+      }
+      li {
+        color: orange;
+      }
+      /*Since (ol li)has a higher specificty than that of (li), it won't be affected. Hover on it to check the specificity*/
+      .box1 {
+        border-width: 5px;
+        border-style: solid;
+        border-color: red;
 
-		<!-- The hr draw a horizontal line through our view port-->
-		<hr /> <!-- This is a self closing tag-->
+        border: 5px dashed red;
 
-		<!--The paragraph tag-->
-		<p>The quick brown fox <br />jumped of the lazy dog</p>
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        /*we can use the below instead of specifying different property for the padding*/
+        padding: 20px 20px 20px 20px;
+        /*if the value will be the same for all direction we can just set it a single value*/
+        padding: 20px;
+        padding: 50px 20px;
 
-		<!-- Pre tag use to format text as it is was written -->
-		<pre>The quick     brown over fox jumped
-		over the lazy dog</pre>
+        margin-top: 20px;
+        margin-right: 20px;
 
-		<!--Lists in HTML-->
-		<!--the ordered list (OL)-->
-		<h2>list of fruits</h2>
-		<ol type= "i" start= "4">
-			<li>Orange</li>
-			<li>Mango</li>
-			<li> PawPaw</li>
-			<li>Apple</li>
-			<li>strawberry</li>
+        height: 20px;
+      }
 
+      .btn {
+        border: 2px solid lightblue;
+        padding: 5px 15px;
+        margin: 20px 0 0 20px;
+        background-color: lightblue;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>logo.</h2>
+      <nav>
+        <a href="#"><p>Home</p></a>
+        <a href="./about.html"><p>About</p></a>
+        <a href="./form.html"><p>contant us</p></a>
+      </nav>
+    </header>
+    <!--hello world-->
+    <!--The following below are the Heading tags-->
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
 
-		</ol>
-		<!--This is an unordered lists (UL)-->
-		<h2>list of cars brand</h2>
-		<ul>
-			<li>BMW</li>
-			<li>Range</li>
-			<li>porche</li>
-			<li>mercesdes Benz</li>
-			<li>Toyota</li>
-		</ul>
+    <!-- The hr draw a horizontal line through our view port-->
+    <hr />
+    <!-- This is a self closing tag-->
 
-		<!--the descriptive list (DL)-->
-		<h2>list of prohramming language</h2>
-		<dl>
-			<dt>HTML</dt>
-			<dd>this is a structural language for formating web pages</dd>
-			<dt>CSS</dt>
-			<dd>this is the styling language for beautifying a webpages</dd>
-			<dt>javascript</dt>
-			<dd>this is a scripting language for making the web page dynamic and interactive</dd>
+    <!--The paragraph tag-->
+    <p>The quick brown fox <br />jumped of the lazy dog</p>
 
-		</dl>
-		<hr />
-		<!--Adding an image to HTML Document-->
-		<img src="./assest/neski.jpg" alt="photo of a shoe" width="200px" />
+    <!-- Pre tag use to format text as it is was written -->
+    <pre>
+The quick     <span>fox</span>jumped
+		over the lazy dog</pre
+    >
 
-		</dl>
-		<hr />
-		<!--Adding an image to HTML Document-->
-		<img src="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_700/MTk2NzIzMTQ2NzMxMTAzMjUw/11-dogs-like-german-shepherd.webp" alt="photo of a dog" width="300px" />
-	
-		<!--creating a table in HTML-->
-		<table border="2">
+    <!--Lists in HTML-->
+    <!--the ordered list (OL)-->
+    <h2>list of fruits</h2>
+    <ol type="i" start="4">
+      <li>Orange</li>
+      <li>Mango</li>
+      <li>PawPaw</li>
+      <li>Apple</li>
+      <li>strawberry</li>
+    </ol>
+    <!--This is an unordered lists (UL)-->
+    <h2>list of cars brand</h2>
+    <ul>
+      <li>BMW</li>
+      <li>Range</li>
+      <li>porche</li>
+      <li>mercesdes Benz</li>
+      <li>Toyota</li>
+    </ul>
 
-			<tr>
-				<td>S/n</td>
-				<td>Name</td>
-			        <td>Email</td>
-				<td>Phone</td>
+    <!--the descriptive list (DL)-->
+    <h2>list of prohramming language</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>this is a structural language for formating web pages</dd>
+      <dt>CSS</dt>
+      <dd>this is the styling language for beautifying a webpages</dd>
+      <dt>javascript</dt>
+      <dd>
+        this is a scripting language for making the web page dynamic and
+        interactive
+      </dd>
+    </dl>
+    <hr />
+    <!--Adding an image to HTML Document-->
+    <img src="./assest/neski.jpg" alt="photo of a shoe" width="200px" />
 
-			</tr>
-			<tr>
-				<td>001</td>
-                                <td>Neskido</td>
-                                <td>neski@gmail.com</td>
-                                <td>911</td>
+    <hr />
+    <!--Adding an image to HTML Document-->
+    <img
+      src="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_700/MTk2NzIzMTQ2NzMxMTAzMjUw/11-dogs-like-german-shepherd.webp"
+      alt="photo of a dog"
+      width="300px"
+    />
 
-				<tr>
-					<td>002</td>
-					<td>Becky</td>
-					<td>favy@gmil.com</td>
-					<td rowspan="2">Phone</td>
-				</tr>
+    <!--creating a table in HTML-->
+    <table border="2">
+      <tr>
+        <td>S/n</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Phone</td>
+      </tr>
+      <tr>
+        <td>001</td>
+        <td>Neskido</td>
+        <td>neski@gmail.com</td>
+        <td>911</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>Becky</td>
+        <td>favy@gmil.com</td>
+        <td rowspan="2">Phone</td>
+      </tr>
 
+      <tr>
+        <td>003</td>
+        <td>john</td>
+        <td>john@gmail.com</td>
+        <td>656 543 876</td>
+        <!--<td>555 543 656<td>-->
+      </tr>
+      <tr>
+        <td colspan="3">Total</td>
+        <td>70,000</td>
+      </tr>
+    </table>
 
-				<tr>
-					<td>003</td>
-					<td>john</td>
-					<td>john@gmail.com</td>
-					<td>656 543 876</td>
-					<!--<td>555 543 656<td>-->
-				</tr>
-				<tr>
-					<td colspan="3">Total</td>
-					<td>70,000</td>
-				</tr>
-		</table>
-	</body>
+    <table border="2">
+      <caption>
+        Score shit for English
+      </caption>
+      <thead>
+        <tr>
+          <th>Serial nunber</th>
+          <th>name of students</th>
+          <th>Cats 30%</th>
+          <th>Exams 40%</th>
+          <th>Total 60%</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>promise favy</td>
+          <td>23</td>
+          <td>30</td>
+          <td>55</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>obi somto</td>
+          <td>25</td>
+          <td>39</td>
+          <td>56</td>
+          <td>D</td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Ogbele bryan</td>
+          <td>26</td>
+          <td>40</td>
+          <td>60</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td>David</td>
+          <td>20</td>
+          <td>23</td>
+          <td>51</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>005</td>
+          <td>kalu</td>
+          <td>21</td>
+          <td>23</td>
+          <td>34</td>
+          <td>E</td>
+        </tr>
+      </tbody>
+    </table>
 
+    <button class="btn">Click me</button>
+    <p class="box1">Hello World</p>
+  </body>
 </html>
-

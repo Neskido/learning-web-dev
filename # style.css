@@ -1,0 +1,13 @@
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+
+}
+#home{
+    border: 1px solid green;
+    height: 100vh;
+
+
+}

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline double;
+}
+.card {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 35px;
+  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.25);
+  /* border: 2px solid red; */
+  /* height: 200px; */
+  /* width: 200px; */
+  /* background-color: rgb(54, 30, 0);
+background-color: #f45cde;
+background-color: hsl(90deg, 100%, 50%); When you reduce the brighness to the lowest, you get black, but when you increase the brighness to the highest, you get white */
+}
+.card figure {
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  /* border-radius: 20px; */
+}
+.card figure img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.card button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: lightblue;
+  border-color: lightblue;
+}
+#home {
+  height: 100vh;
+  width: 100%;
+  background-color: #0000ff;
+  background: linear-gradient(
+    45deg,
+    red 20%,
+    #a0032a 40%,
+    rgb(127, 0, 255) 90%
+  );
+  background: radial-gradient(
+    closest-side at 60% 40%,
+    rgb(0, 255, 127),
+    #00c3f4
+  );
+  background-image: url("https://plus.unsplash.com/premium_photo-1709311897767-f6ce7e1fc227?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  background-attachment: fixed;
+}
+#home h1 {
+  color: #a0032a;
+  text-align: left;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+#home p {
+  color: #a0032a;
+  text-align: left;
+  width: 65%;
+  /* margin:0 auto; */
+}
+#home p::selection{
+background-color: pink;
+color: black;
+
+}
+#home p:first-letter{
+    /* font-size: 25px/*; */
+}
+
+
+#home div {
+  padding: 100px;
+}
+#home button {
+  font-size: 23px;
+  padding: 10px 30px;
+  border: none;
+  border: radius 5px;
+  display: block;
+  margin: 0 0 0 100px;
+  background-color: red;
+}
+#product {
+  margin: 30px 0;
+}
+#product h2 {
+  text-align: center;
+}
+.product-desc {
+  margin: 10px 0;
+}
+.navlink {
+  text-decoration: none;
+}
+label,
+input,
+textarea {
+  display: block;
+}
+/*selecting the paragraph inside the anchor tag with the class "navlink"*/
+.navlink p,
+.logo,
+nav {
+  display: inline-block;
+}
+.nav {
+  margin-left: 40%;
+}
+.navlink p {
+  /* margin: 30px; */
+  padding: 20px 20px;
+}
+.navlink p:hover {
+  color: white;
+  background-color: black;
+}
+/* styling for blog */
+#blog {
+  padding: 30px;
+}
+#blog ul {
+  list-style: none;
+  /* border: 2px solid black; */
+  text-align: center;
+}
+#blog ul li {
+  display: inline-block;
+  padding: 15px 40px;
+}
+#blog div p:nth-child(odd){
+    color: #00c3f4;
+}
+.abc:visited{
+    color: #a0032a;
+}
